@@ -57,16 +57,6 @@ static inline int convertToInt(const std::string & str)
 	__throw_invalid_argument("Invalid argument exception in convertToInt function: A non digit was passed in.");
 }//end charToInt
 
-///////////////////////////////////
-//does a conversion from string to int
-///////////////////////////////////
-static inline int convertToInt(const std::string & str)
-{
-	std::stringstream io;
-	int a;
-	if(io << str)
-}//end convertToInt
-
 ////////////////////////////////
 //returns true if string contains all digits
 ////////////////////////////////
