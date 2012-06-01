@@ -40,7 +40,6 @@ static inline int charToInt(char c) {
 		return retInt;
 	}
 	__throw_invalid_argument("Invalid argument exception in charToInt function: A non digit was passed in.");
-	return retInt;
 }//end charToInt
 
 ///////////////////////////////////
@@ -53,11 +52,19 @@ static inline int convertToInt(const std::string & str)
 	if(io << str)
 	{
 		io >> a;
+		return a;
 	}
-	else
-		abort();
+	__throw_invalid_argument("Invalid argument exception in convertToInt function: A non digit was passed in.");
+}//end charToInt
 
-	return a;
+///////////////////////////////////
+//does a conversion from string to int
+///////////////////////////////////
+static inline int convertToInt(const std::string & str)
+{
+	std::stringstream io;
+	int a;
+	if(io << str)
 }//end convertToInt
 
 ////////////////////////////////

@@ -1,0 +1,2 @@
+echo g++ -Wall -I./ -I$BOOST_HOME -I${DK_INCLUDES} -L${BOOST_FS} -L${BOOST_SYSTEM} -L${BOOST_THREAD} -L${BOOST_PTHREAD} -lboost_system -lboost_filesystem -lboost_thread uuid_gen_driver.cpp uuid_generator.cpp -o fuuidgen
+g++ -Wall -I./ -I$BOOST_HOME -I${DK_INCLUDES} -L${BOOST_FS} -L${BOOST_SYSTEM} -L${BOOST_THREAD} -L${BOOST_PTHREAD} -lboost_system -lboost_filesystem -lboost_thread uuid_gen_driver.cpp uuid_generator.cpp -o fuuidgen
